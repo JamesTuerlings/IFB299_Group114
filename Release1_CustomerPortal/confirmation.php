@@ -63,11 +63,13 @@
 	}
 
 	//insert form data in to database
-	mysql_query("INSERT INTO orders (orderID,customerID,pickupDate,pickupTime,delDate,delTime,numPackages,weight,pickupType,deliveryType,secure,signature,pPostcode,pStreet,pSuburb,pState,cost)
-	VALUES('$orderID','$customerID','$pickupDate','$pickupTime','$delDate','$delTime','$numPackages','$weight','$pickupType','$deliveryType','$secure','$signature','$pPostcode','$pStreet','$pSuburb','$pState','$cost')");
-
+	
 	mysql_query("INSERT INTO recepient (recepientFName,recepientLName,delStreet,delState,delSuburb,delPostcode,delTelNo,recepientID)
 	VALUES('$recepientFName','$recepientLName','$delStreet','$delState','$delSuburb','$delPostcode','$delTelNo','$recepientID')");
+	
+	mysql_query("INSERT INTO orders (orderID,customerID,pickupDate,pickupTime,delDate,delTime,numPackages,weight,pickupType,deliveryType,secure,signature,pPostcode,pStreet,pSuburb,pState,cost,recepientID)
+	VALUES('$orderID','$customerID','$pickupDate','$pickupTime','$delDate','$delTime','$numPackages','$weight','$pickupType','$deliveryType','$secure','$signature','$pPostcode','$pStreet','$pSuburb','$pState','$cost','$recepientID')");
+
 ?>
 
 <!DOCTYPE html>
@@ -93,6 +95,8 @@
 						<h2 style="color:orange; font-size:300%; font-weight:bold"><?php echo $orderID; ?></h2><br>
 						<h2>Your User ID </h2>
 						<h2 style="color:orange; font-size:300%; font-weight:bold"><?php echo $customerID; ?></h2><br>
+						<h2>Recepient ID </h2>
+						<h2 style="color:orange; font-size:300%; font-weight:bold"><?php echo $recepientID; ?></h2><br>
 
 					</div>
 

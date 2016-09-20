@@ -50,6 +50,14 @@
 										echo "<td>".$row["orderID"]."</td>";
 										echo "</tr>";
 										echo "<tr>";
+										echo	"<th>Order Status</th>";
+										echo "<td>".$row["orderStatus"]."</td>";
+										echo "</tr>";
+										echo "<tr>";
+										echo	"<th>Payment Status</th>";
+										echo "<td>".$row["paymentStatus"]."</td>";
+										echo "</tr>";
+										echo "<tr>";
 										echo	"<th>Number of Packages</th>";
 										echo "<td>".$row["numPackages"]."</td>";
 										echo "</tr>";
