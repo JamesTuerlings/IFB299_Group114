@@ -23,7 +23,7 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
-		<title> Cost </title>		
+		<title> Track Details </title>		
         <!-- Link CSS -->
         <link href="main.css" rel="stylesheet" type="text/css"/>
 	</head>

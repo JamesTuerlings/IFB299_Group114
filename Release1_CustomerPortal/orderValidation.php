@@ -23,6 +23,7 @@
 			//validate the inputed data
 			require 'validateFunctions.php';
 			validateNumber($errors, $_POST, 'numPackages');
+			validateNumber($errors, $_POST, 'weight');
 			validateNumber($errors, $_POST, 'pPostcode');
 			
 			if ($errors) {

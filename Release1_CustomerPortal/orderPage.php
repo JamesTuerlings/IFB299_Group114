@@ -13,7 +13,7 @@
 			<div class="clear"></div>
 			<section class= "main_section">
 				
-				<img src = "pageno1.png" alt="Image missing" height="40" width="370" class= "pageNo"/>
+				<img src = "pageno2.png" alt="Image missing" height="40" width="370" class= "pageNo"/>
 				<div class= "orderPage_background">
 					<div class= "innerDiv">
 						<h1 class="orderHeading"> Order Details </h1><br/>
@@ -57,10 +57,10 @@
 								echo htmlspecialchars($_POST['pickupTime'])?>"/><br><br>
 
 								<label>Pickup Location <span>*</span></label>
-								<input type="text" name="pStreet" placeholder="Street" maxlength="20" required value = "<?php if(isset($_POST['pStreet']))
+								<input type="text" name="pStreet" maxlength="25" placeholder="Street" maxlength="20" required value = "<?php if(isset($_POST['pStreet']))
 								echo htmlspecialchars($_POST['pStreet'])?>"/>&nbsp;
 							
-								<input type="text" name="pSuburb"  placeholder="Suburb" maxlength="20" required value = "<?php if(isset($_POST['pSuburb']))
+								<input type="text" name="pSuburb" maxlength="25"  placeholder="Suburb" maxlength="20" required value = "<?php if(isset($_POST['pSuburb']))
 								echo htmlspecialchars($_POST['pSuburb'])?>"/>
 							
 								<select name= "pState">
@@ -71,7 +71,7 @@
 									<option value="WA"> WA </option>
 								</select>
 								
-								<input type="text" name="pPostcode"  placeholder="Postcode" maxlength="20" required value = "<?php if(isset($_POST['pPostcode']))
+								<input type="text" name="pPostcode" maxlength="4"  placeholder="Postcode" maxlength="20" required value = "<?php if(isset($_POST['pPostcode']))
 								echo htmlspecialchars($_POST['pPostcode'])?>"/><br><br>
 							
 								<input type="submit" value="Calculate Cost">

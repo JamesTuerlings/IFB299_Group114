@@ -23,6 +23,7 @@
 								<label style="font-size:120%; font-weight:bold">Order Number:</label>  
 								<input class="input" type="number" placeholder="Enter Your Order ID here" name="orderNum" required value = "<?php if(isset($_POST['orderNum']))
 								echo htmlspecialchars($_POST['orderNum'])?>"/><br><br>
+								<input type="submit"  value="Track Order">
 								
 							</form>
 					
