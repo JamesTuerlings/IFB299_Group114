@@ -13,7 +13,7 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
-		<title> Order Confirmation </title>		
+		<title> Customer Welcome </title>		
         <!-- Link CSS -->
         <link href="main.css" rel="stylesheet" type="text/css"/>
 	</head>
@@ -24,7 +24,6 @@
 			<div class="clear"></div>
 			<section class= "main_section">
 				
-				<img src = "pageno1.png" alt="Image missing" height="40" width="370" class= "pageNo"/>
 				<div class= "orderPage_background">
 					<div class= "costDiv">
 						<h1 style="padding-bottom: 50px;"> Welcome <?php echo $firstName." ".$lastName; ?></h1><br/>

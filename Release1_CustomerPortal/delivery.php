@@ -13,7 +13,7 @@
 			<div class="clear"></div>
 			<section class= "main_section">
 				
-				<img src = "pageno1.png" alt="Image missing" height="40" width="370" class= "pageNo"/>
+				<img src = "pageno3.png" alt="Image missing" height="40" width="370" class= "pageNo"/>
 				<div class= "orderPage_background">
 						<div class= "innerDiv">
 						<h1 class="orderHeading"> Delivery Details </h1><br/>
@@ -45,7 +45,7 @@
 								</select><br><br>
 								
 								Postcode
-								<input type="text" name="delPostcode" required value = "<?php if(isset($_POST['delPostcode']))
+								<input type="text" name="delPostcode" maxlength="4" required value = "<?php if(isset($_POST['delPostcode']))
 								echo htmlspecialchars($_POST['delPostcode'])?>"/><br><br>
 							
 								<label><span>Telephone  </span><input type="text" name="delTelNo" maxlength="11" required value = "<?php if(isset($_POST['delTelNo']))

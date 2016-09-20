@@ -85,7 +85,7 @@
 			<div class="clear"></div>
 			<section class= "main_section">
 
-				<img src = "pageno1.png" alt="Image missing" height="40" width="370" class= "pageNo"/>
+				<img src = "pageno4.png" alt="Image missing" height="40" width="370" class= "pageNo"/>
 				<div class= "orderPage_background">
 					<div class= "costDiv">
 						<h1 style="padding-bottom: 50px;"> Order Confirmation </h1><br/>

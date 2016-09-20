@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
-		<title> Order Confirmation </title>		
+		<title> Feature </title>		
         <!-- Link CSS -->
         <link href="main.css" rel="stylesheet" type="text/css"/>
 	</head>

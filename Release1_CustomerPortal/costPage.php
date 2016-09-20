@@ -31,7 +31,7 @@
 			<div class="clear"></div>
 			<section class= "main_section">
 				
-				<img src = "pageno1.png" alt="Image missing" height="40" width="370" class= "pageNo"/>
+				<img src = "pageno2.png" alt="Image missing" height="40" width="370" class= "pageNo"/>
 				<div class= "orderPage_background">
 					<div class= "costDiv">
 						<h1> Total Cost </h1><br/>

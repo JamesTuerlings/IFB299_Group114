@@ -8,6 +8,7 @@
 			validateName($errors, $_POST, 'lastName');
 			validateEmail($errors, $_POST, 'customerEmail');
 			validateNumber($errors, $_POST, 'telNo');
+			validateNumber($errors, $_POST, 'postcode');
 
 			if ($errors) {
 				$errorsMessage = " ";
