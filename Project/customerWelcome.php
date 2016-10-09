@@ -50,10 +50,7 @@
 				</div>
 
 			</section>
-			<div class="clear"></div>
-			<footer class="page_footer">
-				&copy; Copywrite OnTheSpotPackages.com
-			</footer>
+			<?php require 'footer.php';?>
        </div>
 	</body>
 </html>
