@@ -21,22 +21,28 @@
 						<form action="customerDetailsValidate.php" method="post" name="…" … >
 
 								<label>Name *</label>
-								<input type="text" name="firstName" placeholder="First" maxlength="20" required value = "<?php if(isset($_POST['firstName']))
+								<input type="text" name="firstName" maxlength="25" placeholder="First" maxlength="20" required value = "<?php if(isset($_POST['firstName']))
 								echo htmlspecialchars($_POST['firstName'])?>"/>&nbsp;
 
-								<input type="text" name="lastName"  placeholder="Last" maxlength="20" required value = "<?php if(isset($_POST['lastName']))
+								<input type="text" name="lastName" maxlength="25"  placeholder="Last" maxlength="20" required value = "<?php if(isset($_POST['lastName']))
 								echo htmlspecialchars($_POST['lastName'])?>"/><br><br>
 
 								Email:
-								<input type="text" name="customerEmail"  placeholder="name@gmail.com" maxlength="25" required value = "<?php if(isset($_POST['customerEmail']))
+								<input type="text" name="customerEmail" maxlength="25"  placeholder="name@gmail.com" maxlength="25" required value = "<?php if(isset($_POST['customerEmail']))
 								echo htmlspecialchars($_POST['customerEmail'])?>"/><br><br>
 
+								Password
+								<input type="password" name="password" placeholder="New Password" required><br><br>
+
+								Confirm Password
+								<input type="password" name="confirmPassword"  required><br><br>
+
 								Street
-								<input type="text" name="street" required value = "<?php if(isset($_POST['street']))
+								<input type="text" name="street" maxlength="30" required value = "<?php if(isset($_POST['street']))
 								echo htmlspecialchars($_POST['street'])?>"/><br><br>
 
 								Suburb
-								<input type="text" name="suburb" required value = "<?php if(isset($_POST['suburb']))
+								<input type="text" name="suburb" maxlength="15" required value = "<?php if(isset($_POST['suburb']))
 								echo htmlspecialchars($_POST['suburb'])?>"/><br><br>
 
 								State
@@ -49,7 +55,7 @@
 								</select><br><br>
 
 								Postcode
-								<input type="text" name="postcode" required value = "<?php if(isset($_POST['postcode']))
+								<input type="text" name="postcode" maxlength="4" required value = "<?php if(isset($_POST['postcode']))
 								echo htmlspecialchars($_POST['postcode'])?>"/><br><br>
 
 								<label><span>Telephone </label><input type="text" name="telNo" maxlength="11" required value = "<?php if(isset($_POST['telNo']))

@@ -32,15 +32,7 @@
 	  $delTelNo = $_POST['delTelNo'];
 
 	  //getting values from customerDetails page
-	  $firstName = $_SESSION['firstName'];
-	  $lastName = $_SESSION['lastName'];
-	  $email = $_SESSION['customerEmail'];
-	  $suburb = $_SESSION['suburb'];
-	  $street = $_SESSION['street'];
-	  $state = $_SESSION['state'];
-	  $telNo = $_SESSION['telNo'];
-	  $customerType = $_SESSION['customerType'];
-	  $postcode = $_SESSION['postcode'];
+	  $customerID = $_SESSION['customerID'];
 
 
 
@@ -56,37 +48,25 @@
 		}
 	}
 
-	//Generate Unique Customer ID
+	//Generate Unique Recepient ID
 	$flag2 = 1;
 	while($flag2 ==1)
 	{
-		$customerID = rand(1,1000);
-		$value = mysql_query("SELECT * FROM customers WHERE customerID = '$customerID'");
+		$recepientID = rand(1,1000);
+		$value = mysql_query("SELECT * FROM recepient WHERE recepientID = '$recepientID'");
 		if(mysql_num_rows($value)==0)
 		{
 			$flag2=0;
 		}
 	}
 
-	mysql_query("INSERT INTO customers (customerID,firstName,lastName,email,suburb,street,state,telNo,customerType,postcode)
-	VALUES('$customerID','$firstName', '$lastName','$email','$suburb','$street','$state','$telNo','$customerType','$postcode')");
-
 	//insert form data in to database
-	mysql_query("INSERT INTO orders (orderID,customerID,pickupDate,pickupTime,delDate,delTime,numPackages,weight,pickupType,deliveryType,secure,signature,pPostcode,pStreet,pSuburb,pState,cost)
-	VALUES('$orderID','$customerID','$pickupDate','$pickupTime','$delDate','$delTime','$numPackages','$weight','$pickupType','$deliveryType','$secure','$signature','$pPostcode','$pStreet','$pSuburb','$pState','$cost')");
 
-	mysql_query("INSERT INTO recepient (orderID,recepientFName,recepientLName,delStreet,delState,delSuburb,delPostcode,delTelNo)
-	VALUES('$orderID','$recepientFName','$recepientLName','$delStreet','$delState','$delSuburb','$delPostcode','$delTelNo')");
+	mysql_query("INSERT INTO recepient (recepientFName,recepientLName,delStreet,delState,delSuburb,delPostcode,delTelNo,recepientID)
+	VALUES('$recepientFName','$recepientLName','$delStreet','$delState','$delSuburb','$delPostcode','$delTelNo','$recepientID')");
 
-
-
-
-	$query = "SELECT * FROM orders";
-	$response = mysql_query($query);
-
-	if($response){
-		//echo "query returns <br/>";
-	}
+	mysql_query("INSERT INTO orders (orderID,customerID,pickupDate,pickupTime,delDate,delTime,numPackages,weight,pickupType,deliveryType,secure,signature,pPostcode,pStreet,pSuburb,pState,cost,recepientID)
+	VALUES('$orderID','$customerID','$pickupDate','$pickupTime','$delDate','$delTime','$numPackages','$weight','$pickupType','$deliveryType','$secure','$signature','$pPostcode','$pStreet','$pSuburb','$pState','$cost','$recepientID')");
 
 ?>
 
@@ -105,7 +85,7 @@
 			<div class="clear"></div>
 			<section class= "main_section">
 
-				<img src = "pageno1.png" alt="Image missing" height="40" width="370" class= "pageNo"/>
+				<img src = "pageno4.png" alt="Image missing" height="40" width="370" class= "pageNo"/>
 				<div class= "orderPage_background">
 					<div class= "costDiv">
 						<h1 style="padding-bottom: 50px;"> Order Confirmation </h1><br/>

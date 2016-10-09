@@ -17,7 +17,7 @@
 				$errorsMessage = "$errorsMessage $field $error,";
 
 				// redisplay the form
-				include 'customerDetails.php';
+				include 'updateDetails.php';
 
 				//show users error message
 				?>
@@ -26,8 +26,8 @@
 			  </script>
 				<?php
 			}else{
-				//add new data in to databse
-				require 'addUser.php';
+        //open connection to database
+        require 'addUpdate.php';
 			}
 
 	?>

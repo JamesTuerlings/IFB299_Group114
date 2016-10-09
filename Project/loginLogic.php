@@ -35,7 +35,7 @@
       if($dbPassword == $password){
         session_start(); $_SESSION['employee'] = true;
         $_SESSION['employee'] = $username;
-        header('Location: http://localhost/Project/employeeManager.php');
+        header('Location: http://localhost/Project/staffHome.php');
 
       }
 
@@ -43,6 +43,7 @@
       if($dbPassword == $password){
         session_start(); $_SESSION['customer'] = true;
         $_SESSION['customer'] = $username;
+        $_SESSION['newCustomer'] = "false";
         header('Location: http://localhost/Project/customerWelcome.php');
       }
 
