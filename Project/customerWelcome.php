@@ -34,7 +34,7 @@
         <link href="main.css" rel="stylesheet" type="text/css"/>
 	</head>
 
-	<?php require 'title.php'; ?>
+	<?php require 'customerTitle.php'; ?>
 	<body>
 		<div class = "container">
 			<div class="clear"></div>
