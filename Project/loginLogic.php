@@ -1,4 +1,5 @@
 <?php
+require 'URL.php';
 
   $personType = '';
   $dbPassword = '';
@@ -35,20 +36,22 @@
       if($dbPassword == $password){
         session_start(); $_SESSION['employee'] = true;
         $_SESSION['employee'] = $username;
-        header('Location: http://localhost/Project/staffHome.php');
-
+        if($username == '1'){
+          $URL = "Location: ${mainURL}managerHome.php";
+          header($URL);
+        }else{
+          $URL = "Location: ${mainURL}staffHome.php";
+          header($URL);
+        }
       }
-
     }else if($personType == 'customer'){
       if($dbPassword == $password){
         session_start(); $_SESSION['customer'] = true;
         $_SESSION['customer'] = $username;
-        $_SESSION['newCustomer'] = "false";
-        header('Location: http://localhost/Project/customerWelcome.php');
+        $URL = "Location: ${mainURL}customerWelcome.php";
+        header($URL);
       }
-
     }
     exit();
   }
-
   ?>
