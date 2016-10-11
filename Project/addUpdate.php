@@ -31,27 +31,20 @@
           <link href="main.css" rel="stylesheet" type="text/css"/>
   	</head>
 
-  	<?php require 'title.php'; ?>
+  	<?php require 'customerTitle.php'; ?>
   	<body>
   		<div class = "container">
   			<div class="clear"></div>
   			<section class= "main_section">
-
-  				<img src = "pageno1.png" alt="Image missing" height="40" width="370" class= "pageNo"/>
   				<div class= "orderPage_background">
   					<div class= "costDiv">
   						<h1 style="padding-bottom: 50px;"> Details Updated Sucessfully</h1><br/>
   						<h2 style="color:black; font-size:200%">Your User ID </h2>
   						<h2 style="color:orange; font-size:300%; font-weight:bold"><?php echo $customerID; ?></h2><br>
-  						<a href = "customerWelcome.php"><input type="button" value="Continue" class="continue_button"/></a><br/>
+  						<a href = "customerWelcome.php"><input type="button" value="Portal" class="continue_button"/></a><br/>
   					</div>
   				</div>
-
   			</section>
-  			<div class="clear"></div>
-  			<footer class="page_footer">
-  				&copy; Copywrite OnTheSpotPackages.com
-  			</footer>
-         </div>
+  			<?php require 'footer.php';?>
   	</body>
   </html>
