@@ -12,7 +12,6 @@
 		<div class = "container">
 			<div class="clear"></div>
 			<section class= "main_section">
-
 				<img src = "pageno1.png" alt="Image missing" height="40" width="370" class= "pageNo"/>
 				<div class= "orderPage_background">
 						<div class= "innerDiv">
@@ -27,25 +26,25 @@
 								<input type="text" name="lastName" maxlength="25"  placeholder="Last" maxlength="20" required value = "<?php if(isset($_POST['lastName']))
 								echo htmlspecialchars($_POST['lastName'])?>"/><br><br>
 
-								Email:
+								<label>Email:</label>
 								<input type="text" name="customerEmail" maxlength="25"  placeholder="name@gmail.com" maxlength="25" required value = "<?php if(isset($_POST['customerEmail']))
 								echo htmlspecialchars($_POST['customerEmail'])?>"/><br><br>
 
-								Password
+								<label>Password</label>
 								<input type="password" name="password" placeholder="New Password" required><br><br>
 
-								Confirm Password
+								<label>Confirm Password</label>
 								<input type="password" name="confirmPassword"  required><br><br>
 
-								Street
+								<label>Street</label>
 								<input type="text" name="street" maxlength="30" required value = "<?php if(isset($_POST['street']))
 								echo htmlspecialchars($_POST['street'])?>"/><br><br>
 
-								Suburb
+								<label>Suburb</label>
 								<input type="text" name="suburb" maxlength="15" required value = "<?php if(isset($_POST['suburb']))
 								echo htmlspecialchars($_POST['suburb'])?>"/><br><br>
 
-								State
+								<label>State</label>
 								<select name= "state">
 									<option value="QLD"> QLD </option>
 									<option value="NSW"> NSW </option>
@@ -54,20 +53,20 @@
 									<option value="WA"> WA </option>
 								</select><br><br>
 
-								Postcode
+								<label>Postcode</label>
 								<input type="text" name="postcode" maxlength="4" required value = "<?php if(isset($_POST['postcode']))
 								echo htmlspecialchars($_POST['postcode'])?>"/><br><br>
 
 								<label><span>Telephone </label><input type="text" name="telNo" maxlength="11" required value = "<?php if(isset($_POST['telNo']))
 								echo htmlspecialchars($_POST['telNo'])?>"/><br><br>
 
-							Customer Type:
+								<label>Customer Type:</label>
 								<select name= "customerType">
 									<option value="individual"> Individual </option>
 									<option value="business"> Business </option>
 								</select><br><br>
 
-								<input type="submit" value="Continue">
+								<input type="submit" value="Continue" class="generalButton">
 						</form>
 					</div>
 				</div>

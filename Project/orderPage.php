@@ -81,7 +81,7 @@
 								<input type="text" name="pPostcode" maxlength="4"  placeholder="Postcode" maxlength="20" required value = "<?php if(isset($_POST['pPostcode']))
 								echo htmlspecialchars($_POST['pPostcode'])?>"/><br><br>
 
-								<input type="submit" value="Calculate Cost">
+								<input type="submit" value="Calculate Cost" class="generalButton">
 						</form>
 					</div>
 
