@@ -71,5 +71,8 @@
 						</form>
 					</div>
 				</div>
+			</section>
+			<?php require 'footer.php';?>
+			 </div>
 			</body>
 </html>
