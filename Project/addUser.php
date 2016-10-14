@@ -21,7 +21,7 @@ require 'linkDB.php';
 	$flag = 1;
 	while($flag ==1)
 	{
-		$customerID = rand(1,1000);
+		$customerID = rand(101,1000);
 		$value = mysql_query("SELECT * FROM customers WHERE customerID = '$customerID'");
 		if(mysql_num_rows($value)==0)
 		{
