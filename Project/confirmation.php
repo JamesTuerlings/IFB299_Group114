@@ -19,6 +19,7 @@
 	  $pStreet = $_SESSION["pStreet"];
 	  $pState = $_SESSION["pState"];
 	  $cost = $_SESSION["cost"];
+		$paymentInfo = $_SESSION["paymentInfo"];
 
 	  //getting values from delivery page
 	  $delDate = $_POST['delDate'];
@@ -65,8 +66,8 @@
 	mysql_query("INSERT INTO recepient (recepientFName,recepientLName,delStreet,delState,delSuburb,delPostcode,delTelNo,recepientID)
 	VALUES('$recepientFName','$recepientLName','$delStreet','$delState','$delSuburb','$delPostcode','$delTelNo','$recepientID')");
 
-	mysql_query("INSERT INTO orders (orderID,customerID,pickupDate,pickupTime,delDate,delTime,numPackages,weight,pickupType,deliveryType,secure,signature,pPostcode,pStreet,pSuburb,pState,cost,recepientID)
-	VALUES('$orderID','$customerID','$pickupDate','$pickupTime','$delDate','$delTime','$numPackages','$weight','$pickupType','$deliveryType','$secure','$signature','$pPostcode','$pStreet','$pSuburb','$pState','$cost','$recepientID')");
+	mysql_query("INSERT INTO orders (orderID,customerID,pickupDate,pickupTime,delDate,delTime,numPackages,weight,pickupType,deliveryType,secure,signature,pPostcode,pStreet,pSuburb,pState,cost,recepientID,paymentInfo)
+	VALUES('$orderID','$customerID','$pickupDate','$pickupTime','$delDate','$delTime','$numPackages','$weight','$pickupType','$deliveryType','$secure','$signature','$pPostcode','$pStreet','$pSuburb','$pState','$cost','$recepientID','$paymentInfo')");
 
 ?>
 

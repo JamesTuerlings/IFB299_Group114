@@ -1,7 +1,11 @@
 <?php
-	session_start();
+	if(!isset($_SESSION))
+		{
+			session_start();
+		}
 	$_SESSION["numPackages"] = $_POST['numPackages'];
 	$_SESSION["weight"] = $_POST['weight'];
+	$_SESSION["paymentInfo"] = $_POST['paymentInfo'];
 	$_SESSION["pickupType"] = $_POST['pickupType'];
 	$_SESSION["deliveryType"] = $_POST['deliveryType'];
 	$_SESSION["secure"] = $_POST['secure'];
@@ -20,8 +24,9 @@
 			//validate the inputed data
 			require 'validateFunctions.php';
 			validateNumber($errors, $_POST, 'numPackages');
+			validateNumber($errors, $_POST, 'weight');
 			validateNumber($errors, $_POST, 'pPostcode');
-			
+
 			if ($errors) {
 				$errorsMessage = " ";
 				foreach ($errors as $field => $error)
@@ -40,7 +45,7 @@
 				//add new data in to databse
 				require 'costPage.php';
 			}
-		
+
 	?>
 </body>
 </html>
