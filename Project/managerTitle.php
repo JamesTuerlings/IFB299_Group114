@@ -7,6 +7,7 @@
 
 	<div class= 'titleContainer'>
 		<header>
+			<img src = "on-the-spot-transparent.png" alt="Image missing" height="75" width="79" class= "logo"/>
 			<h1> On the Spot Packages </h1>
 		</header>
 
