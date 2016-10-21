@@ -32,8 +32,8 @@ require 'URL.php';
       $dbPassword = $r['password'];
     }
 
-    if($personType == 'employee'){
-      if($dbPassword == $password){
+    if($dbPassword == $password){
+      if($personType == 'employee'){
         session_start(); $_SESSION['employee'] = true;
         $_SESSION['employee'] = $username;
         if($username == '1'){
@@ -43,15 +43,26 @@ require 'URL.php';
           $URL = "Location: ${mainURL}staffHome.php";
           header($URL);
         }
-      }
-    }else if($personType == 'customer'){
-      if($dbPassword == $password){
+
+      }else if($personType == 'customer'){
         session_start(); $_SESSION['customer'] = true;
         $_SESSION['customer'] = $username;
         $URL = "Location: ${mainURL}customerWelcome.php";
         header($URL);
+
       }
+      exit();
+    }else{
+      ?>
+      <script type="text/javascript">
+        window.alert("Incorrect password");
+      </script>
+      <?php
     }
-    exit();
   }
+
+
+  
+
+
   ?>

@@ -5,7 +5,8 @@ require 'linkDB_employee.php';
 
 
 			$sql = "SELECT * FROM  packagedb.orders
-							INNER JOIN packagedb.customers ON customers.customerID = orders.customerID";
+							INNER JOIN packagedb.customers ON customers.customerID = orders.customerID
+							WHERE orderStatus = 'delivered'";
 
 
 		//prepare and execute query
