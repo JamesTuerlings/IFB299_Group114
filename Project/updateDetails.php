@@ -27,7 +27,7 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
-		<title> Order </title>
+		<title> Update Details </title>
         <!-- Link CSS -->
         <link href="main.css" rel="stylesheet" type="text/css"/>
 	</head>
@@ -50,25 +50,25 @@
 								<input type="text" name="lastName" maxlength="25"  value =<?php echo $lastName;?> maxlength="20" required value = "<?php if(isset($_POST['lastName']))
 								echo htmlspecialchars($_POST['lastName'])?>"/><br><br>
 
-								Email:
+								<label>Email:</label>
 								<input type="text" name="customerEmail" maxlength="25"  value =<?php echo $email;?> maxlength="25" required value = "<?php if(isset($_POST['customerEmail']))
 								echo htmlspecialchars($_POST['customerEmail'])?>"/><br><br>
 
-								Password
+								<label>Password</label>
 								<input type="password" name="password" value =<?php echo $password;?> required><br><br>
 
-								Confirm Password
+								<label>Confirm Password</label>
 								<input type="password" name="confirmPassword" value =<?php echo $password;?>  required><br><br>
 
-								Street
+								<label>Street</label>
 								<input type="text" name="street" maxlength="30" value =<?php echo $street;?> required value = "<?php if(isset($_POST['street']))
 								echo htmlspecialchars($_POST['street'])?>"/><br><br>
 
-								Suburb
+							<label>Suburb</label>
 								<input type="text" name="suburb" maxlength="15" value =<?php echo $suburb;?> required value = "<?php if(isset($_POST['suburb']))
 								echo htmlspecialchars($_POST['suburb'])?>"/><br><br>
 
-								State
+								<label>State</label>
 								<select name= "state">
                   <option value =<?php echo $state;?>><?php echo $state;?></option>
 									<option value="QLD"> QLD </option>
@@ -78,20 +78,20 @@
 									<option value="WA"> WA </option>
 								</select><br><br>
 
-								Postcode
+								<label>Postcode</label>
 								<input type="text" name="postcode" maxlength="4" value =<?php echo $postcode;?> required value = "<?php if(isset($_POST['postcode']))
 								echo htmlspecialchars($_POST['postcode'])?>"/><br><br>
 
 								<label><span>Telephone </label><input type="text" name="telNo" maxlength="11" value =<?php echo $telNo;?> required value = "<?php if(isset($_POST['telNo']))
 								echo htmlspecialchars($_POST['telNo'])?>"/><br><br>
 
-							Customer Type:
+							<label>Customer Type:</label>
 								<select name= "customerType">
                   <option value =<?php echo $customerType;?>><?php echo $customerType;?></option>
 									<option value="individual"> Individual </option>
 									<option value="business"> Business </option>
 								</select><br><br>
-								<input type="submit" value="Submit">
+								<input type="submit" value="Submit" class="generalButton">
 						</form>
 					</div>
 				</div>
