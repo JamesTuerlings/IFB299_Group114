@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost/Project/index.php" />
+<title>RegisterCustomer_and_PlaceOrder_integration_test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">RegisterCustomer_and_PlaceOrder_integration_test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/Project/index.php</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Welcome</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=input.index_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>css=input.index_button</td>
+	<td>Register</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.index_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=firstName</td>
+	<td>John</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=lastName</td>
+	<td>Row</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customerEmail</td>
+	<td>john@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=confirmPassword</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=street</td>
+	<td>victoria rd </td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=suburb</td>
+	<td>kg</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=state</td>
+	<td>label=TAS</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=postcode</td>
+	<td>1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=telNo</td>
+	<td>43434354545</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=customerType</td>
+	<td>label=Business</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.generalButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.costDiv &gt; h1</td>
+	<td>Welcome John Row</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h2</td>
+	<td>Your User ID</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=input.continue_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>css=input.continue_button</td>
+	<td>Continue</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.continue_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Customer Welcome</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=input.cusWelcome_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>css=input.cusWelcome_button</td>
+	<td>Place Order</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.cusWelcome_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Order</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1.orderHeading</td>
+	<td>Order Details</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=numPackages</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=weight</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=paymentInfo</td>
+	<td>label=Card</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=pickupType</td>
+	<td>label=Urgent</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=deliveryType</td>
+	<td>label=Urgent</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=secure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=pickupDate</td>
+	<td>11/11/2016</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=pickupTime</td>
+	<td>11:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=pStreet</td>
+	<td>victoria</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=pSuburb</td>
+	<td>kg</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=pState</td>
+	<td>label=NSW</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=pPostcode</td>
+	<td>1234</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>css=input.generalButton</td>
+	<td>Calculate Cost</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.generalButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Cost</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.costDiv &gt; h1</td>
+	<td>Total Cost</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=form[name=&quot;…&quot;] &gt; div</td>
+	<td>Number of Packages = 2<br /> Total Weights = 3<br /> Total Cost = 19</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>css=input.cost_button</td>
+	<td>Continue</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.cost_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=recepientFName</td>
+	<td>james</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=recepientLName</td>
+	<td>row</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=delStreet</td>
+	<td>victoria</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=delSuburb</td>
+	<td>logan</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=delState</td>
+	<td>label=NSW</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=delPostcode</td>
+	<td>4444</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=delTelNo</td>
+	<td>12343423</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=delDate</td>
+	<td>12/12/2016</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=delTime</td>
+	<td>12:30</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>css=input.generalButton</td>
+	<td>Continue</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.generalButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Order Confirmation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.costDiv &gt; h1</td>
+	<td>Order Confirmation</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
