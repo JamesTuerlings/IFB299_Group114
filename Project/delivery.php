@@ -7,7 +7,7 @@
         <link href="main.css" rel="stylesheet" type="text/css"/>
 	</head>
 
-	<?php require 'title.php'; ?>
+	<?php require 'customerTitle.php'; ?>
 	<body>
 		<div class = "container">
 			<div class="clear"></div>
@@ -63,3 +63,9 @@
 						</form>
 					</div>
 				</div>
+			</section>
+				<div class="clear"></div>
+				<footer class="page_footer">
+					&copy; Copywrite OnTheSpotPackages.com
+				</footer>
+			</div>
