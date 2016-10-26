@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost/Project/index.php" />
+<title>Customer_LogIn_test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Customer_LogIn_test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/Project/index.php</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Welcome</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1</td>
+	<td>On the Spot Packages</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//input[@value='Login']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//input[@value='Login']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Login']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=username</td>
+	<td>768</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>1234</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Customer Welcome</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.costDiv &gt; h1</td>
+	<td>Welcome john row</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li</td>
+	<td>Home</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=SignOut</td>
+	<td>SignOut</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Customer Welcome</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=SignOut</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Welcome</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
