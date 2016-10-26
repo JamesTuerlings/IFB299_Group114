@@ -1,1 +1,0 @@
-&copy; Copywrite OnTheSpotPackages.com

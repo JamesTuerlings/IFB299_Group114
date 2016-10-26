@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost/Project/index.php" />
+<title>DriverPortal_DeliverySchedule</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">DriverPortal_DeliverySchedule</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/Project/index.php</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Welcome</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1</td>
+	<td>On the Spot Packages</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//input[@value='Login']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//input[@value='Login']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Login']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>name=…</td>
+	<td>Username <br /><br /> password</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=username</td>
+	<td>33</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>On the spot staff</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Signout</td>
+	<td>Signout</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=input.index_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>css=input.index_button</td>
+	<td>Delivery Schedule</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.index_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=section.main_section_white &gt; h1</td>
+	<td>Deliveries</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=29</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=td</td>
+	<td>customer name</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[2]/td</td>
+	<td>num. packages</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[3]/td</td>
+	<td>weight</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[4]/td</td>
+	<td>signature</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[5]/td</td>
+	<td>pickup address</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[7]/td</td>
+	<td>cost</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[8]/td</td>
+	<td>status</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.index_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Signout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Welcome</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,31 @@
+Artefact Descriptions 2
+James J. Tuerlings
+n8351473
+
+1.Burndown and Commentary:
+Similarly to the first release I tracked our progress, wrote diary entries
+compiled the other entries and constructed various charts to show our progress
+
+2.Database:
+I created the MySQL database/tables that we used for the project
+Including the ordering table, customer table, employee table, order table and
+recipient table. I uploaded these to the server through putty and rebuilt the table
+through the Ubuntu command line.
+
+3.Employee Validation:
+I added the PHP needed to validate employee details when they attempted
+to log into the server
+
+4. Logo PHP:
+Using the images that the others made, I wrote some PHP to include
+it into the website
+
+5.Unit and Integration testing:
+I expanded my Selenium test suite from part 1 to cover all the new functionality
+that we had added to the website. Additionally I added some integration tests
+to ensure that the seperate parts were working as a whole once we brought the
+project together
+
+
+I chose these artefacts because my part 1 contributions leaned towards the documentation side of things
+and I wanted to show that I also took part in the implementation and testing of the project.

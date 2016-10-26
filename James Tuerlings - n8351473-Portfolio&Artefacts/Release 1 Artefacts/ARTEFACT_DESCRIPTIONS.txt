@@ -1,0 +1,31 @@
+Artefact Descriptions 1
+James J. Tuerlings
+n8351473
+
+1. Burndown Charts and Burndown documentation:
+Throughout the semester I kept track of our story points
+as well as obtaining short diary-like entries from the team
+I graphed our final progress and included the team's comments
+
+2.Story Cards:
+I was most responsible for creating and fleshing out the stories
+that we chose to use in our final product. I created a large number,
+fixed the other's cards, and wrote all of the priorities and acceptance criteria, as well
+as assigning the number of story points.
+
+3. Unit testing:
+I created some unit tests for the Selenium Platform in order to properly 
+test the websitesinitial functionality, I ran them and used them to fix some
+bugs in the php once the website had been uploaded to the server
+
+4.Server Setup:
+I setup the Server that we used to host our website. The Full explanation
+can be found in the document. (52.64.22.175 is the address)
+
+5. Release plan 1:
+I wrote the initial release plan based on the story cards that I created,
+the others finished the sprint plans and worked on the software.
+
+
+I chose these artefacts because I believe they show that I took part in both
+the documentation and Agile concepts as well as working on the project itself.

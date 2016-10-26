@@ -1,0 +1,4 @@
+For this piece of assessment I contributed roughly 50%.
+I wrote the majority of the stories themselves and assigned a large number of story point values and priorities.
+I also organised them so that they could be selected for release more easily and fixed any mistakes.
+-James Tuerlings.
